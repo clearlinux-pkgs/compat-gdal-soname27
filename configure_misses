@@ -1,0 +1,67 @@
+Configure miss: CharLS/charls.h
+Configure miss: CharLS/interface.h
+Configure miss: FMEObjects
+Configure miss: FreeXL support... checking for freexl.h
+Configure miss: G_gisinit_2 in -lgrass5
+Configure miss: Google libkml
+Configure miss: HDF5
+Configure miss: Ingres
+Configure miss: JP2Lura support... checking for MSG
+Configure miss: Kakadu JPEG2000 support
+Configure miss: LIBKML
+Configure miss: MONGOCXXV3
+Configure miss: Mopen in -lcsf
+Configure miss: MySQL
+Configure miss: NCScbmOpenFileView in -lNCSEcw
+Configure miss: NCScbmOpenFileView in -lecwj2
+Configure miss: OGDI
+Configure miss: OPENJPEG
+Configure miss: OpenCL support
+Configure miss: SDreaddata in -lhdf4
+Configure miss: SDreaddata in -lmfhdf
+Configure miss: SDreaddata in -lmfhdf
+Configure miss: SDreaddata in -lmfhdf
+Configure miss: SDreaddata in -lmfhdfalt
+Configure miss: charls/version.h
+Configure miss: cryptopp
+Configure miss: csf.h
+Configure miss: dbmalloc.h
+Configure miss: ecs.h
+Configure miss: ffopen in -lcfitsio
+Configure miss: freexl_open in -lfreexl
+Configure miss: freexl_open in -lfreexl
+Configure miss: freexl_open in -lfreexl
+Configure miss: freexl_open in -lfreexl
+Configure miss: freexl_open in -lfreexl
+Configure miss: g++ option to enable C++11 features
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: gta_version in -lgta
+Configure miss: if Oracle support is enabled
+Configure miss: if Oracle support is enabled
+Configure miss: int16
+Configure miss: int32
+Configure miss: int8
+Configure miss: jp2_decode in -ljasper
+Configure miss: jpc_decode in -ljasper
+Configure miss: kea
+Configure miss: kea-config
+Configure miss: local include/lib path
+Configure miss: nc-config
+Configure miss: nc_open in -lnetcdf
+Configure miss: pgx_decode in -ljasper
+Configure miss: qhull/libqhull.h
+Configure miss: rdb_library_name in -lrdb
+Configure miss: tiledb_coords in -ltiledb
+Configure miss: to enable debug build
+Configure miss: whether C compiler accepts -Wcomma
+Configure miss: whether C compiler accepts -Wdocumentation -Wno-documentation-deprecated-sync
+Configure miss: whether C compiler accepts -Werror -we10006
+Configure miss: whether C compiler accepts -Wshorten-64-to-32
+Configure miss: whether C compiler accepts -diag-disable 188,1684,2259,2304,3280,11074,11076
+Configure miss: whether C++ compiler accepts -Wunused-private-field
+Configure miss: whether SSE is available at compile time
+Configure miss: whether to build PDF driver as a plugin
+Configure miss: whether we should hide internal symbols
+Configure miss: whether we should include Armadillo support
+Configure miss: whether we should include Java support
+Configure miss: whether we should include MDB support
