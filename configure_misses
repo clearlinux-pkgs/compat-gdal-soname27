@@ -65,3 +65,4 @@ Configure miss: whether we should hide internal symbols
 Configure miss: whether we should include Armadillo support
 Configure miss: whether we should include Java support
 Configure miss: whether we should include MDB support
+Configure miss: x86_64-generic-linux-gnu-file

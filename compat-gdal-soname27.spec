@@ -4,7 +4,7 @@
 #
 Name     : compat-gdal-soname27
 Version  : 3.1.2
-Release  : 45
+Release  : 46
 URL      : https://download.osgeo.org/gdal/3.1.2/gdal-3.1.2.tar.xz
 Source0  : https://download.osgeo.org/gdal/3.1.2/gdal-3.1.2.tar.xz
 Summary  : Geospatial Data Abstraction Library
@@ -95,15 +95,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644608599
+export SOURCE_DATE_EPOCH=1664890677
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -fstack-protector-strong -fzero-call-used-regs=used -mno-vzeroupper -mprefer-vector-width=256 "
-export FCFLAGS="$FFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -fstack-protector-strong -fzero-call-used-regs=used -mno-vzeroupper -mprefer-vector-width=256 "
-export FFLAGS="$FFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -fstack-protector-strong -fzero-call-used-regs=used -mno-vzeroupper -mprefer-vector-width=256 "
-export CXXFLAGS="$CXXFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -fstack-protector-strong -fzero-call-used-regs=used -mno-vzeroupper -mprefer-vector-width=256 "
+export CFLAGS="$CFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -mprefer-vector-width=256 "
+export FCFLAGS="$FFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -mprefer-vector-width=256 "
+export FFLAGS="$FFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -mprefer-vector-width=256 "
+export CXXFLAGS="$CXXFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -flto=auto -fno-semantic-interposition -mprefer-vector-width=256 "
 %reconfigure --disable-static --with-libtiff=yes \
 --with-png=yes \
 --with-spatialite=yes \
@@ -116,24 +116,24 @@ export CXXFLAGS="$CXXFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -fl
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1644608599
+export SOURCE_DATE_EPOCH=1664890677
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/compat-gdal-soname27
-cp %{_builddir}/gdal-3.1.2/LICENSE.TXT %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3c5056c99522acf3d9e2c2a2f61fdeeffced4174
-cp %{_builddir}/gdal-3.1.2/alg/internal_libqhull/COPYING.txt %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/baf1d15dcf66b1e1dfee80eb405aa73105842017
-cp %{_builddir}/gdal-3.1.2/doc/source/gdal_rtd/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/8ce271d47d282a4da574b385a8aff7a0d735188e
-cp %{_builddir}/gdal-3.1.2/doc/source/license.rst %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/0f9d62383e84298877fe5f5d41f6a944f7ef8563
-cp %{_builddir}/gdal-3.1.2/frmts/gif/giflib/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/f9c9a2d3495a0766b4cf20d4b90cfe714dab3dc1
-cp %{_builddir}/gdal-3.1.2/frmts/mrf/libLERC/LICENSE.TXT %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3035b519169390d1aaa3a43267deaae5cdff8a9b
-cp %{_builddir}/gdal-3.1.2/frmts/pcraster/libcsf/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/1d982db70b88f943cc7d15013c28a126339d6cbc
-cp %{_builddir}/gdal-3.1.2/frmts/png/libpng/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/fc3951ba26fe1914759f605696a1d23e3b41766f
-cp %{_builddir}/gdal-3.1.2/ogr/ogrsf_frmts/flatgeobuf/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/161732baff9a38188301a521b567a20245367c7e
-cp %{_builddir}/gdal-3.1.2/ogr/ogrsf_frmts/flatgeobuf/flatbuffers/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/abb8eb20f7f319cd8b292cdccce15826bac01363
-cp %{_builddir}/gdal-3.1.2/ogr/ogrsf_frmts/geojson/libjson/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/0cd23537e3c32497c7b87157b36f9d2eb5fca64b
-cp %{_builddir}/gdal-3.1.2/ogr/ogrsf_frmts/shape/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/df97bdf33b01f9ed42a799dd3ed7a1599dd0cb9d
-cp %{_builddir}/gdal-3.1.2/port/LICENCE_minizip %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/f7f1d88d0aea6c567a2c351b08b0fe80f2582054
-cp %{_builddir}/gdal-3.1.2/third_party/LercLib/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3035b519169390d1aaa3a43267deaae5cdff8a9b
-cp %{_builddir}/gdal-3.1.2/third_party/LercLib/NOTICE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/4e8e03579f57bab9de5401be3fb96344f0823ead
+cp %{_builddir}/gdal-%{version}/LICENSE.TXT %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3c5056c99522acf3d9e2c2a2f61fdeeffced4174 || :
+cp %{_builddir}/gdal-%{version}/alg/internal_libqhull/COPYING.txt %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/baf1d15dcf66b1e1dfee80eb405aa73105842017 || :
+cp %{_builddir}/gdal-%{version}/doc/source/gdal_rtd/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/8ce271d47d282a4da574b385a8aff7a0d735188e || :
+cp %{_builddir}/gdal-%{version}/doc/source/license.rst %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/0f9d62383e84298877fe5f5d41f6a944f7ef8563 || :
+cp %{_builddir}/gdal-%{version}/frmts/gif/giflib/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/f9c9a2d3495a0766b4cf20d4b90cfe714dab3dc1 || :
+cp %{_builddir}/gdal-%{version}/frmts/mrf/libLERC/LICENSE.TXT %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3035b519169390d1aaa3a43267deaae5cdff8a9b || :
+cp %{_builddir}/gdal-%{version}/frmts/pcraster/libcsf/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/1d982db70b88f943cc7d15013c28a126339d6cbc || :
+cp %{_builddir}/gdal-%{version}/frmts/png/libpng/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/fc3951ba26fe1914759f605696a1d23e3b41766f || :
+cp %{_builddir}/gdal-%{version}/ogr/ogrsf_frmts/flatgeobuf/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/161732baff9a38188301a521b567a20245367c7e || :
+cp %{_builddir}/gdal-%{version}/ogr/ogrsf_frmts/flatgeobuf/flatbuffers/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/abb8eb20f7f319cd8b292cdccce15826bac01363 || :
+cp %{_builddir}/gdal-%{version}/ogr/ogrsf_frmts/geojson/libjson/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/0cd23537e3c32497c7b87157b36f9d2eb5fca64b || :
+cp %{_builddir}/gdal-%{version}/ogr/ogrsf_frmts/shape/COPYING %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/df97bdf33b01f9ed42a799dd3ed7a1599dd0cb9d || :
+cp %{_builddir}/gdal-%{version}/port/LICENCE_minizip %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/f7f1d88d0aea6c567a2c351b08b0fe80f2582054 || :
+cp %{_builddir}/gdal-%{version}/third_party/LercLib/LICENSE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/3035b519169390d1aaa3a43267deaae5cdff8a9b || :
+cp %{_builddir}/gdal-%{version}/third_party/LercLib/NOTICE %{buildroot}/usr/share/package-licenses/compat-gdal-soname27/4e8e03579f57bab9de5401be3fb96344f0823ead || :
 %make_install
 ## Remove excluded files
 rm -f %{buildroot}*/usr/etc/bash_completion.d/gdal-bash-completion.sh
